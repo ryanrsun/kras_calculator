@@ -6,7 +6,7 @@ Included is an R Shiny app that calculates the posterior probability of false ne
 
 We plan to soon host the app on a hospital server, which will any interested researchers to utilize the calculations without needing to access the raw data. An image of the running app is below.
 
-![KRAS false negative calculator](Figures/screenshot.png)
+![KRAS false negative calculator](screenshot.png)
 
 
 
