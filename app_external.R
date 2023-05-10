@@ -150,8 +150,8 @@ ui <- fluidPage(
     sidebarPanel(
       sliderInput("mafInput", "Your MAF", min = 1, max = 100, value = 1, step = 1),
       radioButtons("trainDataInput", "Training Dataset",
-                   choices = c("CLIA", "MGH", "Combined", "Personal"),
-                   selected = "CLIA"),
+                   choices = c("MDACC", "MGH", "Combined", "Personal"),
+                   selected = "MDACC"),
       radioButtons("geneInput", "Gene",
                   choices = c("KRAS", "KRAS and NRAS"),
                   selected = "KRAS")
@@ -173,7 +173,7 @@ server <- function(input, output) {
         params1 <- c( 0.3271157, 1.4410169)
         mu1 <- 11 / 194
         chosenDataset <- NULL
-      } else if (input$trainDataInput == "CLIA") {
+      } else if (input$trainDataInput == "MDACC") {
         params0 <- c(0.4127479, 2.2654186)
         params1 <- c(0.6966429, 42.0260599)
         mu1 <- 29 / 237
@@ -194,7 +194,7 @@ server <- function(input, output) {
         params1 <- c(0.6285794, 17.9724951)
         mu1 <-  7 / 183
         chosenDataset <- NULL
-      } else if (input$trainDataInput == "CLIA") {
+      } else if (input$trainDataInput == "MDACC") {
         params0 <- c(0.4600886, 1.5114152)
         params1 <- c(0.3253474, 4.3855413)
         mu1 <- 33 / 223
