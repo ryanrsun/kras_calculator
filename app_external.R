@@ -13,10 +13,10 @@ library(magrittr)
 #---------------------------------------------------------------------------------------------------#
 #---------------------------------------------------------------------------------------------------#
 
-# If you are using your own personal training dataset, overwrite the file exampleTrainingDat.csv
+# If you are using your own personal training dataset, overwrite the file exampledat.csv
 # with your own training dataset. Make sure that it has the same column names, all values are separated
-# by commas (not spaces or tabs), and all values are numeric (except for the column headings).
-# No further changes necessary.
+# by commas (not spaces or tabs), and all values are numeric (except for the column headings). 
+# Then uncomment lines 20/21 and comment lines 22/23. No further changes necessary.
 #setwd('/users/rsun3/desktop/kras_calculator-main')
 #personalTrainingDat <- read.csv("exampledat.csv", header=T)
 personalTrainingDat <- data.frame(bKRAS = rep(0, 4), bNRAS = 0.6, tKRAS = FALSE, tNRAS = c(TRUE, FALSE, FALSE, FALSE),
